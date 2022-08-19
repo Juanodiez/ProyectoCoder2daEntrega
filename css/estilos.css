@@ -1,0 +1,277 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+nav{
+    background-image: url(https://w0.peakpx.com/wallpaper/731/330/HD-wallpaper-worldpadel-ball-padel-tennis.jpg);
+    height: 175px;
+    width: 100%;
+}
+.enlace{
+    position: absolute;
+    padding: 20px 50px;
+}
+.logo{
+    padding-top: 1px
+    ;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: #fff;
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+li a.active, a.active2, a.active3, a.active4, a.active5, li a:hover{
+    background: #056489;
+    transition: .5s;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+
+@media (max-width: 952px){
+    .enlace{
+        padding-left: 20px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-image: url(https://w0.peakpx.com/wallpaper/731/330/HD-wallpaper-worldpadel-ball-padel-tennis.jpg);
+        top: 175px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    li a:hover, li a.active, a.active2, a.active3, a.active4, a.active5{
+        background: none;
+        color: red;
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+}
+
+.container{
+    width: 94%;
+    height: 1200px;
+    outline: 2px;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 1100px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 400px;
+    grid-gap: 15px;
+}
+
+.item{
+    /*width: 100px;
+    height: 100px;*/
+    color: white;
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+}
+
+.item1{
+    background-image: url(https://media.istockphoto.com/photos/yellow-tennis-ball-in-the-court-on-blue-grass-paddle-tennis-ball-on-picture-id1346488310?b=1&k=20&m=1346488310&s=170667a&w=0&h=Dg7VZnlTkwmVuUtAtgW9400a8r74Wx6ETanLJvEVnlQ=) ;
+}
+
+.item2{
+    background-image: url(https://media.istockphoto.com/photos/yellow-tennis-ball-in-the-court-on-blue-grass-paddle-tennis-ball-on-picture-id1346488310?b=1&k=20&m=1346488310&s=170667a&w=0&h=Dg7VZnlTkwmVuUtAtgW9400a8r74Wx6ETanLJvEVnlQ=) ;
+}
+
+.item3{
+    background-image: url(https://media.istockphoto.com/photos/yellow-tennis-ball-in-the-court-on-blue-grass-paddle-tennis-ball-on-picture-id1346488310?b=1&k=20&m=1346488310&s=170667a&w=0&h=Dg7VZnlTkwmVuUtAtgW9400a8r74Wx6ETanLJvEVnlQ=) ;
+}
+
+.item4{
+    background-image: url(https://media.istockphoto.com/photos/yellow-tennis-ball-in-the-court-on-blue-grass-paddle-tennis-ball-on-picture-id1346488310?b=1&k=20&m=1346488310&s=170667a&w=0&h=Dg7VZnlTkwmVuUtAtgW9400a8r74Wx6ETanLJvEVnlQ=) ;
+}
+
+.item5{
+    background-image: url(https://media.istockphoto.com/photos/yellow-tennis-ball-in-the-court-on-blue-grass-paddle-tennis-ball-on-picture-id1346488310?b=1&k=20&m=1346488310&s=170667a&w=0&h=Dg7VZnlTkwmVuUtAtgW9400a8r74Wx6ETanLJvEVnlQ=) ;
+}
+
+.item6{
+    background-image: url(https://media.istockphoto.com/photos/yellow-tennis-ball-in-the-court-on-blue-grass-paddle-tennis-ball-on-picture-id1346488310?b=1&k=20&m=1346488310&s=170667a&w=0&h=Dg7VZnlTkwmVuUtAtgW9400a8r74Wx6ETanLJvEVnlQ=) ;
+}
+.container-img{
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 250px;
+    grid-gap: 20px;
+}
+.container-img .box-img figure{
+    width: 100%;
+    height: 100%;
+}
+.container-img .box-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.container-img .box-img:nth-child(1){
+    grid-column-start: span 2;
+}
+.container-img .box-img:nth-child(4){
+    grid-row-start: span 2;
+}
+@media screen and (min-width: 233px){
+    .container-img{
+        width: 95%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+        grid-template-rows: 200px;
+    }
+    .container-img .box-img:nth-child(1){
+        grid-column-start: span 1;
+    }
+}
+@media screen and (min-width: 233px){
+    .container-img{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .container-img .box-img img{
+        height: 200px;
+    }
+}
+.parrafo-de-presentacion {
+    font-size: 20px;
+    font-style: italic;
+    background-image: url(https://en.reformsports.com/oxegrebi/2022/04/how-to-build-a-padel-tennis-court.jpeg);
+    /**background-repeat: no-repeat;**/
+    background-position: center;
+    margin: 10px 20px 10px 20px;
+    padding: 100px;
+}
+.cancha-cielo{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+}
+
+
+/**---------------------------------------FOOTER------------------------------------------------**/
+.pie-pagina{
+    width: 100%;
+    background-color: #0a141d;
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 980px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 250px;
+}
+.pie-pagina .grupo-1 .box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: aqua;
+}
+.pie-pagina .grupo-2{
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+@media screen and (min-width: 233px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
+}
